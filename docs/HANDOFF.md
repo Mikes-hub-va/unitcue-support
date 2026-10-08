@@ -1,25 +1,22 @@
 # UnitCue Support — Handoff
 
 ## Objective
-Keep UnitCue's static support/privacy pages aligned with the app.
+Keep UnitCue's static support/privacy pages aligned with the app and clearly disclose public support channels.
 
 ## Current state
-Static support/privacy pages exist; no active work is assumed.
+`support.html` on branch `codex/unitcue-public-issue-disclosure-20261008` warns that GitHub Issues and replies are public, discourages personal/sensitive details, and notes that the site does not list a private support channel. No approved private channel was found in site or canonical app repo context. Privacy copy and app behavior claims are unchanged.
 
 ## Relevant files
-`index.html`, `support.html`, `privacy.html`, `AGENTS.md`, `docs/PROJECT_STATE.md`.
+`support.html`, `privacy.html`, `index.html`, `AGENTS.md`, `docs/PROJECT_STATE.md`.
 
 ## Completed work
-Static support/privacy companion site.
+Source checks passed for all local page links and the public issue destination. The privacy page's existing privacy claims and support link are preserved.
 
 ## Next action
-Only when app behavior/disclosures change: reconcile wording with `pricebook-ios` and verify public rendering.
+Review and merge the pull request, then verify the published static pages and links.
 
 ## Validation
-Open the public/static pages and confirm links/content render correctly.
+Fetched the branch versions of all three static pages; local links resolve among the site files, the support link targets the repository's public Issues URL, and the disclosure text is present.
 
 ## Blockers / owner actions
-None unless legal/contact wording requires owner approval.
-
-## Escalation
-Escalate privacy/legal conflicts or requests to expose personal information.
+Publication requires normal pull request review and merge. No owner contact information was added.
